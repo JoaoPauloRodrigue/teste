@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade do formuário de Cadastro</title>
+    <meta name="description" content="Venha participar da nossa maratona de front-end e ganhe um certificado para turbinar seu Linkedin"/>
+    <link rel="icon" href="/src/img/favicon.jpeg">
+    <link href="styles/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section>
+        <h1>Formulário de Cadastro</h1>
+        <br>
+        <h3>Preencha todos os campos e venha fazer parte da Kenzie</h3>
+    </section>
+    <!--formulário de cadastro-->
+    <section>
+        <Main>
+            <form>
+
+                <div>
+                    <label for="usuario">Nome</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome aqui..." required="true"/>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o seu melhor e-mail aqui..." required="true"/>
+            
+                </div> 
+                <div>
+                    <label for="sobre">Descrição</label>
+                    <br>
+                    <Textarea id="sobre" name="mensagem" placeholder="Descreva aqui o que te motivou participar do evento..." cols="20" rows="10" required="true"></Textarea>
+                </div>
+                <div>
+                    <label for="curso">Módulo</label>
+                <br>
+                <select id="curso" name="modulo" required="true">
+                    <option value="">Escolher módulo</option>
+                    <option value="front-end">Front-end</option>
+                    <option value="back-end">Back-end</option>
+                    <option value="full-stack">Full Stack</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="password">Senha</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha aqui..." required="true"/>
+                    <br>
+                    <label for="password2">Confirmar Senha</label>
+                    <br>
+                    <input type="password" id="password2" name="confirmarsenha" placeholder="Digite sua senha novamente aqui..." required="true"/>
+                    <br> 
+                </div>
+
+                <div>
+                    <p>Deseja receber novidades via e-mail?</p>
+                
+                    <label for="sim email">Sim</label>
+                    <input type="radio" value="sim" name="receber novidades" id="sim email" required/>
+                    <br>
+                    <br>
+                    <label for="nao email">Não</label>
+                    <input type="radio" value="nao" name="receber novidades" id="nao email" required/>
+                    <br>
+                    <br> 
+                </div>
+                
+                <button type="submit">Cadastrar</button>
+                  
+
+            </form>
+        </Main>
+    </section>   
+</body>
+</html>
